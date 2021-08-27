@@ -1,26 +1,27 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
 
-int main()
+/* betty style doc for function main goes there */
+int main(void)
 {
-    int num;
-    
-    /* Input number from user */
-    printf("Enter any number: ");
-    scanf("%d", &num);
-    
+	int n;
 
-    if(num > 0)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+    if(n > 0)
     {
         printf("Number is POSITIVE");
     }
-    if(num < 0)
+    if(n < 0)
     {
         printf("Number is NEGATIVE");
     }
-    if(num == 0)
+    if(n == 0)
     {
         printf("Number is ZERO");
     }
 
-    return 0;
+	/* your code goes there */
+	return (0);
 }
