@@ -1,15 +1,33 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _isupper - Entry point
  *@c: charater to check
  * Return: if is lower or upper return 1 else 0
  */
+
 int _isupper(int c)
 {
 
+	int m;
+
 	if (c >= 'A' && c <= 'Z')
-		return (1);
+
+	{
+
+		m = 1;
+
+	}
+
 	else
-		return (0);
+
+	{
+
+		m = 0;
+
+	}
+
+	return (m);
+
 }
