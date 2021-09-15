@@ -37,6 +37,7 @@ int wildcmp(char *s1, char *s2)
 int asterisks(char *s1, char *s2, char *asterisks)
 {
 
+      char *origin = s1;
 	if (*s2 == '*') /*Iterate over series of '*' */
 	{
 		s2++;
