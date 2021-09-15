@@ -8,7 +8,7 @@
  */
 int wildcmp(char *s1, char *s2)
 {
-	char *asterisks = s1;
+	char *origin = s2;
 
 	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
@@ -34,8 +34,9 @@ int wildcmp(char *s1, char *s2)
  *
  *Return: 1 if the strings are the same, 0 if not
  */
-int asterisks(char *s1, char *s2, char *asterisks)
+int asterisks(char *s1, char *s2, char *origin)
 {
+
 	if (*s2 == '*') /*Iterate over series of '*' */
 	{
 		s2++;
