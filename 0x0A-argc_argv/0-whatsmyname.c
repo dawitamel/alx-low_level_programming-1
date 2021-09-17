@@ -1,18 +1,30 @@
-#include<stdio.h>
-#include"main.h"
+#include "main.h"
+
 
 /**
- * main - entry point
- * @argc: contains the number of arguments that have been entered
- * @argv: array of pointers to characters
- * Return: Success or failure
+ * _puts - print a string, followed by a new line
+ * @str: the string to print
+ *
+ * Return: void
  */
-
-int main(int argc, char *argv[])
-
+void _puts(char *str)
 {
+	while (*str)
+		_putchar(*str++);
+	_putchar('\n');
+}
 
-	printf("%s\n", argv[argc - 1]);
+
+/**
+ * main - print the name of the program
+ * @argc: size of the argument vector
+ * @argv: program name and arguments
+ *
+ * Return: Always 0
+ */
+int main(int argc __attribute__ ((unused)), char *argv[])
+{
+	_puts(argv[0]);
 
 	return (0);
 }
