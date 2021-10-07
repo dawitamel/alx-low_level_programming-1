@@ -4,7 +4,7 @@
 /*
  * File: lists.h
  * Desc: Header file containing prototypes and definitions for all functions
- *       and types written in the 0x11-singly_linked_lists directory.
+ *       and types written in the 0x12-singly_linked_lists directory.
  */
 
 #include <stdlib.h>
